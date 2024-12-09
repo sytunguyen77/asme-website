@@ -147,6 +147,15 @@ body {
   font-size: 101px;
   color: #00a9ed;
 }
+
+.title-milions #count1,
+.title-milions #count2 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
 .describe-millions {
   color: #00a9ed;
   padding: 0 20px;
