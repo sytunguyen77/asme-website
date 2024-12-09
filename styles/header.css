@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+.header {
+  background-color: #000;
+  padding: 20px 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo img {
+  max-height: 70px;
+}
+
+.link a {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link a:hover {
+  color: #00a9ed;
+}
+
+.list-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+
+.list-header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.list-header ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.list-header ul li a:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+.navbar-toggler.open .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler.open .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler.open .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+@media (max-width: 990px) {
+  .header .logo img {
+    max-height: 50px;
+    width: auto;
+  }
+
+  .header .header-right {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .header .header-right .link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .header .header-right .list-header ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header .header-right .list-header ul li {
+    margin: 10px 0;
+  }
+}
+/* Responsive */
+@media (max-width: 991px) {
+  .header-right {
+    align-items: flex-start;
+  }
+
+  .list-header ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px; /* Giảm khoảng cách khi màn hình nhỏ */
+  }
+}
+
+@media (max-width: 576px) {
+  .logo img {
+    max-height: 50px;
+  }
+
+  .list-header ul li a {
+    font-size: 14px;
+  }
+}
