@@ -274,6 +274,8 @@ body {
   border: 1px solid #fff;
   padding: 100px;
   margin-left: -10px;
+  position: relative;
+  z-index: -1000px;
 }
 
 .content-blue-left {
