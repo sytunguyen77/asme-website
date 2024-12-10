@@ -39,9 +39,11 @@ body {
   transition: 0.5s;
   cursor: pointer;
 }
+
 .backToTopBtn:not(:hover) {
   background: #00a9ed;
 }
+
 .backToTopBtn:hover {
   background: #484848;
 }
@@ -51,10 +53,26 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+
 .backToTopBtn:not(.active) {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+/*=======Scroll bar=======*/
+::-webkit-scrollbar {
+  width: 10px;
+  background: #484848;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00a9ed;
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0058a0;
 }
 
 .overlay {
