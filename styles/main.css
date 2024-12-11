@@ -812,6 +812,10 @@ body {
   .section-million .title-milions {
     font-size: 3.7rem !important;
   }
+
+  .title-content {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -875,18 +879,19 @@ body {
   .section-million .row .col-12 {
     text-align: justify; /* Duy trì căn chỉnh văn bản */
   }
-}
-.left-animated,
-.right-animated,
-.bottom-animated {
-  overflow-x: hidden !important;
-}
-.wrap {
-  position: relative;
-  overflow: hidden !important;
-}
-.sticky-top {
-  z-index: 9999;
+
+  .left-animated,
+  .right-animated,
+  .bottom-animated {
+    overflow-x: hidden !important;
+  }
+  .wrap {
+    position: relative;
+    overflow: hidden !important;
+  }
+  .sticky-top {
+    z-index: 9999;
+  }
 }
 
 @media (max-width: 576px) {
@@ -934,6 +939,10 @@ body {
   .section-million .fw-bold {
     font-size: 1rem;
     text-align: center;
+  }
+
+  .section-content {
+    font-size: 2.5rem;
   }
 }
 
@@ -998,6 +1007,13 @@ body {
 @media (max-width: 1110px) {
   .vision h2 {
     font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .box-content-left,
+  .box-content-right {
+    padding: 30px;
   }
 }
 
