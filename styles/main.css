@@ -815,6 +815,11 @@ body {
 
   .title-content {
     margin-top: 40px;
+    text-align: center;
+  }
+
+  .describe-content {
+    text-align: center;
   }
 }
 
