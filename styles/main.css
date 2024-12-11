@@ -691,29 +691,6 @@ body {
   z-index: 2;
 }
 
-@media (max-width: 768px) {
-  .banner-content .top-text h1 {
-    font-size: 32px;
-  }
-
-  .banner-content .bottom-text h2 {
-    font-size: 24px;
-  }
-
-  .banner-content .bottom-text p {
-    font-size: 14px;
-  }
-
-  .img-children-1 {
-    width: 120px !important;
-  }
-
-  .title-content br,
-  .describe-content br {
-    display: none;
-  }
-}
-
 @media (max-width: 1800px) {
   .box-children-4 {
     right: 12%;
@@ -783,7 +760,7 @@ body {
   }
 
   .banner-home .content h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .banner-home .content h1.title {
@@ -806,30 +783,52 @@ body {
   .img-content img {
     display: none;
   }
-}
-.overflow-x-hidden {
-  overflow-x: hidden !important;
+
+  .overflow-x-hidden {
+    overflow-x: hidden !important;
+  }
+
+  .banner-content .top-text h1 {
+    font-size: 32px;
+  }
+
+  .banner-content .bottom-text h2 {
+    font-size: 24px;
+  }
+
+  .banner-content .bottom-text p {
+    font-size: 14px;
+  }
+
+  .img-children-1 {
+    width: 120px !important;
+  }
+
+  .title-content br,
+  .describe-content br {
+    display: none;
+  }
+
+  .section-million .title-milions {
+    font-size: 3.7rem !important;
+  }
 }
 
 @media (max-width: 480px) {
   .banner-home {
-    height: 200px; /* Chiều cao banner nhỏ hơn cho màn hình rất nhỏ */
-  }
-
-  .banner-home .content h3 {
-    font-size: 0.875rem;
+    height: 400px; /* Chiều cao banner nhỏ hơn cho màn hình rất nhỏ */
   }
 
   .banner-home .content h1.title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .banner-home h1.title-content-main {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .banner-home .content .describe {
-    font-size: 0.75rem;
+    /* font-size: 0.75rem; */
   }
 
   .section-million .title-content {
@@ -849,6 +848,7 @@ body {
     font-size: 3.5rem;
   }
 }
+
 @media (max-width: 992px) {
   .box-blue {
     display: none !important;
@@ -863,7 +863,7 @@ body {
   }
   /* Tablet */
   .section-million .title-milions {
-    font-size: 1.75rem; /* Giảm kích thước tiêu đề */
+    font-size: 4rem; /* Giảm kích thước tiêu đề */
     text-align: center; /* Canh giữa tiêu đề */
   }
 
@@ -907,32 +907,33 @@ body {
     padding-top: 20px;
     padding-left: 0 !important;
   }
+
   /* Mobile */
   .section-million .title-milions {
-    font-size: 1.5rem; /* Giảm thêm kích thước tiêu đề */
-    text-align: center; /* Canh giữa tiêu đề */
-    margin-bottom: 10px; /* Thêm khoảng cách dưới */
+    font-size: 2.7rem !important;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
   .section-million .describe-millions {
-    font-size: 1rem; /* Giảm thêm kích thước mô tả */
-    text-align: center; /* Canh giữa mô tả */
-    margin-bottom: 20px; /* Thêm khoảng cách dưới */
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .section-million .row .col-12.col-md-8 {
-    width: 100%; /* Chiếm toàn bộ chiều rộng */
-    padding: 0 15px; /* Thêm khoảng cách hai bên */
+    width: 100%;
+    padding: 0 15px;
   }
 
   .section-million .py-4 {
-    padding: 10px 0; /* Điều chỉnh khoảng cách padding */
-    font-size: 0.9rem; /* Giảm kích thước chữ */
+    padding: 10px 0;
+    font-size: 0.9rem;
   }
 
   .section-million .fw-bold {
-    font-size: 1rem; /* Tăng kích thước chữ cho đoạn văn in đậm */
-    text-align: center; /* Canh giữa văn bản */
+    font-size: 1rem;
+    text-align: center;
   }
 }
 
