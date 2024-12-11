@@ -158,12 +158,14 @@ body {
   position: relative;
   overflow-x: hidden !important;
 }
+
 .title-milions {
   font-family: "Cormorant SC", serif;
   font-weight: 300;
   font-style: normal;
   font-size: 101px;
   color: #00a9ed;
+  margin-top: 50px;
 }
 
 .title-milions #count1,
@@ -302,6 +304,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1000;
 }
 .vision {
   background-color: #00a9ed !important;
@@ -517,7 +520,7 @@ body {
 .img-children-1 {
   position: absolute;
   z-index: 201;
-  width: 170px !important;
+  width: 150px !important;
   top: 86% !important;
 }
 .banner-home {
@@ -639,6 +642,7 @@ body {
   text-transform: uppercase;
   text-align: left;
   letter-spacing: 2px;
+  margin-top: 80px;
 }
 
 .describe-content {
@@ -690,11 +694,17 @@ body {
   .banner-content .top-text h1 {
     font-size: 32px;
   }
+
   .banner-content .bottom-text h2 {
     font-size: 24px;
   }
+
   .banner-content .bottom-text p {
     font-size: 14px;
+  }
+
+  .img-children-1 {
+    width: 120px !important;
   }
 
   .title-content br,

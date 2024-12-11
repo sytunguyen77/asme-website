@@ -30,8 +30,14 @@ ScrollReveal().reveal(".top-animated", {
   delay: 200,
 });
 
-ScrollReveal().reveal("postion-relative", {
-  delay: 100,
-  origin: "bottom",
-  interval: 200,
+const boxes = document.querySelectorAll(".bottom-animated");
+
+boxes.forEach((box, index) => {
+  ScrollReveal().reveal(box, {
+    duration: 500,
+    distance: "50px",
+    origin: "bottom",
+    easing: "ease-in-out",
+    delay: 200 * (index + 1), // Incremental delay
+  });
 });
