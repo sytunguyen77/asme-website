@@ -509,7 +509,7 @@ body {
   width: 170px;
   background-color: #fff;
   position: absolute;
-  bottom: -20px;
+  bottom: 900px;
   right: -70px;
   z-index: 100;
   opacity: 0.3;
@@ -753,6 +753,10 @@ body {
 @media (max-width: 1400px) {
   .content-blue-right {
     padding-right: 60px;
+  }
+
+  .box-over-light {
+    bottom: 1000px;
   }
 }
 

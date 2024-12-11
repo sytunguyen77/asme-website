@@ -29,3 +29,9 @@ ScrollReveal().reveal(".top-animated", {
   easing: "ease-in-out",
   delay: 200,
 });
+
+ScrollReveal().reveal("postion-relative", {
+  delay: 100,
+  origin: "bottom",
+  interval: 200,
+});
