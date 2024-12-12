@@ -675,18 +675,21 @@ body {
   height: 100%; /* Đảm bảo phủ toàn bộ banner-home */
   z-index: 200; /* Đặt lớp phủ nằm trên các phần tử khác trong banner-home */
 }
+
 .left-vision {
   position: relative;
 }
+
 .colored-background {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 50%;
-  height: 30%;
+  height: 26%;
   background-color: #000;
   z-index: 1;
 }
+
 .right-animated {
   z-index: 2;
 }
@@ -824,6 +827,10 @@ body {
 
   .section-content {
     text-align: center;
+  }
+
+  .colored-background {
+    display: none;
   }
 }
 
