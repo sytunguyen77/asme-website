@@ -478,7 +478,7 @@ body {
 
 .box-blue-2 {
   position: absolute;
-  z-index: 2000;
+  z-index: 1000;
   right: -50px;
   top: 770px;
 }
@@ -629,7 +629,7 @@ body {
 .title-content-main {
   font-size: 60px;
   font-weight: bold;
-  z-index: 2000;
+  z-index: 1000;
   position: absolute;
   top: 61%;
   left: 24%;
@@ -655,7 +655,7 @@ body {
   position: absolute;
   top: 68%;
   left: 20%;
-  z-index: 2000;
+  z-index: 1000;
 }
 
 .img-content-main img {
