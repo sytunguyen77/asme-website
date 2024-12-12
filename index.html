@@ -269,6 +269,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/80bacdb160.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script async src="./js/animated.js"></script>
+    <script>
+      document
+        .querySelector(".navbar-toggler")
+        .addEventListener("click", function () {
+          this.classList.toggle("open");
+        });
+    </script>
     <script>
       function cutInsideOverlayArea() {
         const overlay = document.querySelector(".box-overlay");
@@ -283,37 +296,23 @@
         const right = Math.max(childRect.right - overlayRect.right, 0);
 
         child.style.clipPath = `polygon(
-          0% 0%,
-          100% 0%,
-          100% ${top}px,
-          ${right}px ${top}px,
-          ${right}px ${childRect.height - bottom}px,
-          100% ${childRect.height - bottom}px,
-          100% 100%,
-          0% 100%,
-          0% ${childRect.height - bottom}px,
-          ${left}px ${childRect.height - bottom}px,
-          ${left}px ${top}px,
-          0% ${top}px
-    )`;
+            0% 0%,
+            100% 0%,
+            100% ${top}px,
+            ${right}px ${top}px,
+            ${right}px ${childRect.height - bottom}px,
+            100% ${childRect.height - bottom}px,
+            100% 100%,
+            0% 100%,
+            0% ${childRect.height - bottom}px,
+            ${left}px ${childRect.height - bottom}px,
+            ${left}px ${top}px,
+            0% ${top}px
+      )`;
       }
 
-      window.addEventListener("load", cutInsideOverlayArea);
+      document.addEventListener("DOMContentLoaded", cutInsideOverlayArea);
       window.addEventListener("resize", cutInsideOverlayArea);
-    </script>
-
-    <script src="https://kit.fontawesome.com/80bacdb160.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script async src="./js/animated.js"></script>
-    <script>
-      document
-        .querySelector(".navbar-toggler")
-        .addEventListener("click", function () {
-          this.classList.toggle("open");
-        });
     </script>
 
 </body>
